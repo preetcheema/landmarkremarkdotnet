@@ -1,5 +1,6 @@
 ﻿using GeoAPI.Geometries;
 using System.Collections.Generic;
+using Microsoft.EntityFrameworkCore.Metadata.Builders;
 using NetTopologySuite.Geometries;
 
 namespace LandmarkRemark.Domain.Entities
@@ -22,7 +23,7 @@ namespace LandmarkRemark.Domain.Entities
         public string Text { get; set; }
         public Point Location { get; set; }  
         
-       
+        public User User { get; set; }
       
     }
 }

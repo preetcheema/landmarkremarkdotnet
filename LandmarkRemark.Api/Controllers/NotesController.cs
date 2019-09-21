@@ -18,10 +18,10 @@ namespace LandmarkRemark.Api.Controllers
             _mediator = mediator;
         }
         [HttpGet]
-        public async Task<ActionResult<IEnumerable<UserNoteDetailModel>>> Get()
+        public async Task<ActionResult<IEnumerable<UserNoteDetailModel>>> Get(string username, string searchTerm)
         {
 
-            var result = await _mediator.Send(new GetNotesRequest());
+            var result = await _mediator.Send(new GetNotesRequest{UserName = username,SearchTerm = searchTerm});
          
 //            var list = new List<Note>
 //            {
