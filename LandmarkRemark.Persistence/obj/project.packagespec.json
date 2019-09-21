@@ -1,0 +1,67 @@
+﻿{
+  "version": "1.0.0",
+  "restore": {
+    "projectUniqueName": "C:\\Programming\\LandmarkProject\\landmarkdotnet\\landmarkremarkdotnet\\LandmarkRemark.Persistence\\LandmarkRemark.Persistence.csproj",
+    "projectName": "LandmarkRemark.Persistence",
+    "projectPath": "C:\\Programming\\LandmarkProject\\landmarkdotnet\\landmarkremarkdotnet\\LandmarkRemark.Persistence\\LandmarkRemark.Persistence.csproj",
+    "outputPath": "C:\\Programming\\LandmarkProject\\landmarkdotnet\\landmarkremarkdotnet\\LandmarkRemark.Persistence\\obj\\",
+    "projectStyle": "PackageReference",
+    "fallbackFolders": [
+      "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+    ],
+    "originalTargetFrameworks": [
+      "netcoreapp2.2"
+    ],
+    "sources": {
+      "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+      "https://api.nuget.org/v3/index.json": {}
+    },
+    "frameworks": {
+      "netcoreapp2.2": {
+        "projectReferences": {
+          "C:\\Programming\\LandmarkProject\\landmarkdotnet\\landmarkremarkdotnet\\LandmarkRemark.Domain\\LandmarkRemark.Domain.csproj": {
+            "projectPath": "C:\\Programming\\LandmarkProject\\landmarkdotnet\\landmarkremarkdotnet\\LandmarkRemark.Domain\\LandmarkRemark.Domain.csproj"
+          }
+        }
+      }
+    },
+    "warningProperties": {
+      "warnAsError": [
+        "NU1605"
+      ]
+    }
+  },
+  "frameworks": {
+    "netcoreapp2.2": {
+      "dependencies": {
+        "Microsoft.EntityFrameworkCore": {
+          "target": "Package",
+          "version": "[2.2.6, )"
+        },
+        "Microsoft.EntityFrameworkCore.SqlServer": {
+          "target": "Package",
+          "version": "[2.2.6, )"
+        },
+        "Microsoft.Extensions.Configuration": {
+          "target": "Package",
+          "version": "[2.2.0, )"
+        },
+        "Microsoft.Extensions.Configuration.Json": {
+          "target": "Package",
+          "version": "[2.2.0, )"
+        },
+        "Microsoft.NETCore.App": {
+          "suppressParent": "All",
+          "target": "Package",
+          "version": "[2.2.0, )",
+          "autoReferenced": true
+        }
+      },
+      "imports": [
+        "net461"
+      ],
+      "assetTargetFallback": true,
+      "warn": true
+    }
+  }
+}

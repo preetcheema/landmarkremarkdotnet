@@ -1,0 +1,12 @@
+C:\Programming\VS\LandmarkRemark\LandmarkRemark.Persistence\bin\Debug\netcoreapp2.2\LandmarkRemark.Persistence.deps.json
+C:\Programming\VS\LandmarkRemark\LandmarkRemark.Persistence\bin\Debug\netcoreapp2.2\LandmarkRemark.Persistence.dll
+C:\Programming\VS\LandmarkRemark\LandmarkRemark.Persistence\bin\Debug\netcoreapp2.2\LandmarkRemark.Persistence.pdb
+C:\Programming\VS\LandmarkRemark\LandmarkRemark.Persistence\bin\Debug\netcoreapp2.2\LandmarkRemark.Domain.dll
+C:\Programming\VS\LandmarkRemark\LandmarkRemark.Persistence\bin\Debug\netcoreapp2.2\LandmarkRemark.Domain.pdb
+C:\Programming\VS\LandmarkRemark\LandmarkRemark.Persistence\obj\Debug\netcoreapp2.2\LandmarkRemark.Persistence.csprojAssemblyReference.cache
+C:\Programming\VS\LandmarkRemark\LandmarkRemark.Persistence\obj\Debug\netcoreapp2.2\LandmarkRemark.Persistence.csproj.CoreCompileInputs.cache
+C:\Programming\VS\LandmarkRemark\LandmarkRemark.Persistence\obj\Debug\netcoreapp2.2\LandmarkRemark.Persistence.AssemblyInfoInputs.cache
+C:\Programming\VS\LandmarkRemark\LandmarkRemark.Persistence\obj\Debug\netcoreapp2.2\LandmarkRemark.Persistence.AssemblyInfo.cs
+C:\Programming\VS\LandmarkRemark\LandmarkRemark.Persistence\obj\Debug\netcoreapp2.2\LandmarkRemark.Persistence.csproj.CopyComplete
+C:\Programming\VS\LandmarkRemark\LandmarkRemark.Persistence\obj\Debug\netcoreapp2.2\LandmarkRemark.Persistence.dll
+C:\Programming\VS\LandmarkRemark\LandmarkRemark.Persistence\obj\Debug\netcoreapp2.2\LandmarkRemark.Persistence.pdb

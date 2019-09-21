@@ -1,0 +1,59 @@
+﻿{
+  "version": "1.0.0",
+  "restore": {
+    "projectUniqueName": "C:\\Programming\\LandmarkProject\\landmarkdotnet\\landmarkremarkdotnet\\LandmarkRemark.BusinessLogic\\LandmarkRemark.BusinessLogic.csproj",
+    "projectName": "LandmarkRemark.BusinessLogic",
+    "projectPath": "C:\\Programming\\LandmarkProject\\landmarkdotnet\\landmarkremarkdotnet\\LandmarkRemark.BusinessLogic\\LandmarkRemark.BusinessLogic.csproj",
+    "outputPath": "C:\\Programming\\LandmarkProject\\landmarkdotnet\\landmarkremarkdotnet\\LandmarkRemark.BusinessLogic\\obj\\",
+    "projectStyle": "PackageReference",
+    "fallbackFolders": [
+      "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+    ],
+    "originalTargetFrameworks": [
+      "netcoreapp2.2"
+    ],
+    "sources": {
+      "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+      "https://api.nuget.org/v3/index.json": {}
+    },
+    "frameworks": {
+      "netcoreapp2.2": {
+        "projectReferences": {
+          "C:\\Programming\\LandmarkProject\\landmarkdotnet\\landmarkremarkdotnet\\LandmarkRemark.Persistence\\LandmarkRemark.Persistence.csproj": {
+            "projectPath": "C:\\Programming\\LandmarkProject\\landmarkdotnet\\landmarkremarkdotnet\\LandmarkRemark.Persistence\\LandmarkRemark.Persistence.csproj"
+          }
+        }
+      }
+    },
+    "warningProperties": {
+      "warnAsError": [
+        "NU1605"
+      ]
+    }
+  },
+  "frameworks": {
+    "netcoreapp2.2": {
+      "dependencies": {
+        "FluentValidation": {
+          "target": "Package",
+          "version": "[8.4.0, )"
+        },
+        "MediatR": {
+          "target": "Package",
+          "version": "[7.0.0, )"
+        },
+        "Microsoft.NETCore.App": {
+          "suppressParent": "All",
+          "target": "Package",
+          "version": "[2.2.0, )",
+          "autoReferenced": true
+        }
+      },
+      "imports": [
+        "net461"
+      ],
+      "assetTargetFallback": true,
+      "warn": true
+    }
+  }
+}

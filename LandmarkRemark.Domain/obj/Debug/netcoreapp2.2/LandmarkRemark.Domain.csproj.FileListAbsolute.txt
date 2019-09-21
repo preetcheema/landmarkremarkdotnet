@@ -1,0 +1,9 @@
+C:\Programming\VS\LandmarkRemark\LandmarkRemark.Domain\bin\Debug\netcoreapp2.2\LandmarkRemark.Domain.deps.json
+C:\Programming\VS\LandmarkRemark\LandmarkRemark.Domain\bin\Debug\netcoreapp2.2\LandmarkRemark.Domain.dll
+C:\Programming\VS\LandmarkRemark\LandmarkRemark.Domain\bin\Debug\netcoreapp2.2\LandmarkRemark.Domain.pdb
+C:\Programming\VS\LandmarkRemark\LandmarkRemark.Domain\obj\Debug\netcoreapp2.2\LandmarkRemark.Domain.csproj.CoreCompileInputs.cache
+C:\Programming\VS\LandmarkRemark\LandmarkRemark.Domain\obj\Debug\netcoreapp2.2\LandmarkRemark.Domain.AssemblyInfoInputs.cache
+C:\Programming\VS\LandmarkRemark\LandmarkRemark.Domain\obj\Debug\netcoreapp2.2\LandmarkRemark.Domain.AssemblyInfo.cs
+C:\Programming\VS\LandmarkRemark\LandmarkRemark.Domain\obj\Debug\netcoreapp2.2\LandmarkRemark.Domain.dll
+C:\Programming\VS\LandmarkRemark\LandmarkRemark.Domain\obj\Debug\netcoreapp2.2\LandmarkRemark.Domain.pdb
+C:\Programming\VS\LandmarkRemark\LandmarkRemark.Domain\obj\Debug\netcoreapp2.2\LandmarkRemark.Domain.csprojAssemblyReference.cache
