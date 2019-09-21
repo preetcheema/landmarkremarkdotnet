@@ -12,3 +12,17 @@ C:\Programming\VS\LandmarkRemark\LandmarkRemark.BusinessLogic\obj\Debug\netcorea
 C:\Programming\VS\LandmarkRemark\LandmarkRemark.BusinessLogic\obj\Debug\netcoreapp2.2\LandmarkRemark.BusinessLogic.csproj.CopyComplete
 C:\Programming\VS\LandmarkRemark\LandmarkRemark.BusinessLogic\obj\Debug\netcoreapp2.2\LandmarkRemark.BusinessLogic.dll
 C:\Programming\VS\LandmarkRemark\LandmarkRemark.BusinessLogic\obj\Debug\netcoreapp2.2\LandmarkRemark.BusinessLogic.pdb
+C:\Programming\LandmarkProject\landmarkdotnet\landmarkremarkdotnet\LandmarkRemark.BusinessLogic\bin\Debug\netcoreapp2.2\LandmarkRemark.BusinessLogic.deps.json
+C:\Programming\LandmarkProject\landmarkdotnet\landmarkremarkdotnet\LandmarkRemark.BusinessLogic\bin\Debug\netcoreapp2.2\LandmarkRemark.BusinessLogic.dll
+C:\Programming\LandmarkProject\landmarkdotnet\landmarkremarkdotnet\LandmarkRemark.BusinessLogic\bin\Debug\netcoreapp2.2\LandmarkRemark.BusinessLogic.pdb
+C:\Programming\LandmarkProject\landmarkdotnet\landmarkremarkdotnet\LandmarkRemark.BusinessLogic\bin\Debug\netcoreapp2.2\LandmarkRemark.Domain.dll
+C:\Programming\LandmarkProject\landmarkdotnet\landmarkremarkdotnet\LandmarkRemark.BusinessLogic\bin\Debug\netcoreapp2.2\LandmarkRemark.Persistence.dll
+C:\Programming\LandmarkProject\landmarkdotnet\landmarkremarkdotnet\LandmarkRemark.BusinessLogic\bin\Debug\netcoreapp2.2\LandmarkRemark.Persistence.pdb
+C:\Programming\LandmarkProject\landmarkdotnet\landmarkremarkdotnet\LandmarkRemark.BusinessLogic\bin\Debug\netcoreapp2.2\LandmarkRemark.Domain.pdb
+C:\Programming\LandmarkProject\landmarkdotnet\landmarkremarkdotnet\LandmarkRemark.BusinessLogic\obj\Debug\netcoreapp2.2\LandmarkRemark.BusinessLogic.csprojAssemblyReference.cache
+C:\Programming\LandmarkProject\landmarkdotnet\landmarkremarkdotnet\LandmarkRemark.BusinessLogic\obj\Debug\netcoreapp2.2\LandmarkRemark.BusinessLogic.csproj.CoreCompileInputs.cache
+C:\Programming\LandmarkProject\landmarkdotnet\landmarkremarkdotnet\LandmarkRemark.BusinessLogic\obj\Debug\netcoreapp2.2\LandmarkRemark.BusinessLogic.AssemblyInfoInputs.cache
+C:\Programming\LandmarkProject\landmarkdotnet\landmarkremarkdotnet\LandmarkRemark.BusinessLogic\obj\Debug\netcoreapp2.2\LandmarkRemark.BusinessLogic.AssemblyInfo.cs
+C:\Programming\LandmarkProject\landmarkdotnet\landmarkremarkdotnet\LandmarkRemark.BusinessLogic\obj\Debug\netcoreapp2.2\LandmarkRemark.BusinessLogic.csproj.CopyComplete
+C:\Programming\LandmarkProject\landmarkdotnet\landmarkremarkdotnet\LandmarkRemark.BusinessLogic\obj\Debug\netcoreapp2.2\LandmarkRemark.BusinessLogic.dll
+C:\Programming\LandmarkProject\landmarkdotnet\landmarkremarkdotnet\LandmarkRemark.BusinessLogic\obj\Debug\netcoreapp2.2\LandmarkRemark.BusinessLogic.pdb

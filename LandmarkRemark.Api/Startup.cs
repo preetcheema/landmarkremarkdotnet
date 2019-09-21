@@ -62,15 +62,17 @@ namespace LandmarkRemark.Api
                         {
                             var mediator = context.HttpContext.RequestServices.GetRequiredService<IMediator>();
                             var userId = int.Parse(context.Principal.Identity.Name);
-                            var user = await mediator.Send(new GetUserByIdQuery() {Id = userId});
+                            var user =await mediator.Send(new GetUserByIdQuery() {Id = userId});
                             if (user == null)
                             {
                                 // return unauthorized if user no longer exists
                                 context.Fail("Unauthorized");
                             }
+                         
+                            
                         }
                     };
-                    x.RequireHttpsMetadata = false;
+                    x.RequireHttpsMetadata = true;
                     x.SaveToken = true;
                     x.TokenValidationParameters = new TokenValidationParameters
                     {
@@ -117,7 +119,7 @@ namespace LandmarkRemark.Api
                 // The default HSTS value is 30 days. You may want to change this for production scenarios, see https://aka.ms/aspnetcore-hsts.
                 app.UseHsts();
             }
-
+            app.UseAuthentication();
             app.UseCors(MyAllowSpecificOrigins);
             app.UseHttpsRedirection();
             app.UseMvc();

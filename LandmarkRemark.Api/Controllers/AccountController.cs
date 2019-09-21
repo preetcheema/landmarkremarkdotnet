@@ -4,7 +4,6 @@ using System.Security.Claims;
 using System.Text;
 using System.Threading.Tasks;
 using LandmarkRemark.Api.Infrastructure;
-using LandmarkRemark.BusinessLogic.Users.Commands;
 using LandmarkRemark.BusinessLogic.Users.Commands.AuthenticateUser;
 using LandmarkRemark.BusinessLogic.Users.Commands.CreateUser;
 using MediatR;
