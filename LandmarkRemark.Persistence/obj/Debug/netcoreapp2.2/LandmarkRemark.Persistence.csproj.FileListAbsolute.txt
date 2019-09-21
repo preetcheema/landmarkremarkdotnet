@@ -22,3 +22,4 @@ C:\Programming\LandmarkProject\landmarkdotnet\landmarkremarkdotnet\LandmarkRemar
 C:\Programming\LandmarkProject\landmarkdotnet\landmarkremarkdotnet\LandmarkRemark.Persistence\obj\Debug\netcoreapp2.2\LandmarkRemark.Persistence.csproj.CopyComplete
 C:\Programming\LandmarkProject\landmarkdotnet\landmarkremarkdotnet\LandmarkRemark.Persistence\obj\Debug\netcoreapp2.2\LandmarkRemark.Persistence.dll
 C:\Programming\LandmarkProject\landmarkdotnet\landmarkremarkdotnet\LandmarkRemark.Persistence\obj\Debug\netcoreapp2.2\LandmarkRemark.Persistence.pdb
+C:\Programming\LandmarkProject\landmarkdotnet\landmarkremarkdotnet\LandmarkRemark.Persistence\obj\Debug\netcoreapp2.2\EFCoreSqlServerNetTopologySuite.cs

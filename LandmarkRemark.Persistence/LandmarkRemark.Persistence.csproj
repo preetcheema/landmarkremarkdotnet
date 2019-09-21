@@ -5,18 +5,20 @@
     </PropertyGroup>
 
     <ItemGroup>
+      <Compile Remove="Migrations\20190921035926_alterNoteLocationNonNullable.cs" />
+      <Compile Remove="Migrations\20190921035926_alterNoteLocationNonNullable.Designer.cs" />
+    </ItemGroup>
+
+    <ItemGroup>
       <PackageReference Include="Microsoft.EntityFrameworkCore" Version="2.2.6" />
       <PackageReference Include="Microsoft.EntityFrameworkCore.SqlServer" Version="2.2.6" />
+      <PackageReference Include="Microsoft.EntityFrameworkCore.SqlServer.NetTopologySuite" Version="2.2.6" />
       <PackageReference Include="Microsoft.Extensions.Configuration" Version="2.2.0" />
       <PackageReference Include="Microsoft.Extensions.Configuration.Json" Version="2.2.0" />
     </ItemGroup>
 
     <ItemGroup>
       <ProjectReference Include="..\LandmarkRemark.Domain\LandmarkRemark.Domain.csproj" />
-    </ItemGroup>
-
-    <ItemGroup>
-      <Folder Include="Migrations" />
     </ItemGroup>
 
 </Project>

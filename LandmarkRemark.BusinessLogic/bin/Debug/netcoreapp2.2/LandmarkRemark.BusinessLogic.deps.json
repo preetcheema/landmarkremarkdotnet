@@ -1,7 +1,7 @@
 {
   "runtimeTarget": {
     "name": ".NETCoreApp,Version=v2.2",
-    "signature": "cff4badf45082de34fc20f9851e98f2c7037d163"
+    "signature": "f72cfca6e77d6840d05d79f9ff83718b9409d85d"
   },
   "compilationOptions": {},
   "targets": {
@@ -24,6 +24,14 @@
           "lib/netstandard2.0/FluentValidation.dll": {
             "assemblyVersion": "8.0.0.0",
             "fileVersion": "8.4.0.0"
+          }
+        }
+      },
+      "GeoAPI.Core/1.7.5": {
+        "runtime": {
+          "lib/netstandard2.0/GeoAPI.dll": {
+            "assemblyVersion": "1.7.5.0",
+            "fileVersion": "1.7.5.0"
           }
         }
       },
@@ -82,6 +90,19 @@
         },
         "runtime": {
           "lib/netstandard2.0/Microsoft.EntityFrameworkCore.SqlServer.dll": {
+            "assemblyVersion": "2.2.6.0",
+            "fileVersion": "2.2.6.19169"
+          }
+        }
+      },
+      "Microsoft.EntityFrameworkCore.SqlServer.NetTopologySuite/2.2.6": {
+        "dependencies": {
+          "Microsoft.EntityFrameworkCore.SqlServer": "2.2.6",
+          "NetTopologySuite.Core": "1.15.1",
+          "NetTopologySuite.IO.SqlServerBytes": "1.15.0"
+        },
+        "runtime": {
+          "lib/netstandard2.0/Microsoft.EntityFrameworkCore.SqlServer.NetTopologySuite.dll": {
             "assemblyVersion": "2.2.6.0",
             "fileVersion": "2.2.6.19169"
           }
@@ -279,6 +300,28 @@
           "runtime/win/lib/_._": {
             "rid": "win",
             "assetType": "runtime"
+          }
+        }
+      },
+      "NetTopologySuite.Core/1.15.1": {
+        "dependencies": {
+          "GeoAPI.Core": "1.7.5"
+        },
+        "runtime": {
+          "lib/netcoreapp2.0/NetTopologySuite.dll": {
+            "assemblyVersion": "1.15.1.0",
+            "fileVersion": "1.15.1.0"
+          }
+        }
+      },
+      "NetTopologySuite.IO.SqlServerBytes/1.15.0": {
+        "dependencies": {
+          "GeoAPI.Core": "1.7.5"
+        },
+        "runtime": {
+          "lib/netstandard2.0/NetTopologySuite.IO.SqlServerBytes.dll": {
+            "assemblyVersion": "1.0.0.0",
+            "fileVersion": "1.15.0.0"
           }
         }
       },
@@ -586,6 +629,9 @@
         }
       },
       "LandmarkRemark.Domain/1.0.0": {
+        "dependencies": {
+          "Microsoft.EntityFrameworkCore.SqlServer.NetTopologySuite": "2.2.6"
+        },
         "runtime": {
           "LandmarkRemark.Domain.dll": {}
         }
@@ -595,6 +641,7 @@
           "LandmarkRemark.Domain": "1.0.0",
           "Microsoft.EntityFrameworkCore": "2.2.6",
           "Microsoft.EntityFrameworkCore.SqlServer": "2.2.6",
+          "Microsoft.EntityFrameworkCore.SqlServer.NetTopologySuite": "2.2.6",
           "Microsoft.Extensions.Configuration": "2.2.0",
           "Microsoft.Extensions.Configuration.Json": "2.2.0"
         },
@@ -616,6 +663,13 @@
       "sha512": "sha512-/VApywgD2sqD3aB1tzub6SIItmwxXN0D5yAiP3kuFHmjYO1W+Ryi531/m4O03/hlfcYrBgewDJn7Jd1Xk0vTdw==",
       "path": "fluentvalidation/8.4.0",
       "hashPath": "fluentvalidation.8.4.0.nupkg.sha512"
+    },
+    "GeoAPI.Core/1.7.5": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-Dy/YkgZ1szgx+xbVWqMi+4++Fm6v3szbVdei1LKPRZ3meSvgNSMZxqhar5IAeaTj5LcUHLtLGdfyUtkjnYbg3A==",
+      "path": "geoapi.core/1.7.5",
+      "hashPath": "geoapi.core.1.7.5.nupkg.sha512"
     },
     "MediatR/7.0.0": {
       "type": "package",
@@ -658,6 +712,13 @@
       "sha512": "sha512-rNnCA7ntlpITeYl1p3lAeS0kyHhETlanTghfpoDgyGIoxyUm2VsI2eyzL6EMYrqWnhAOwx3HzP0/50XRM/0CHw==",
       "path": "microsoft.entityframeworkcore.sqlserver/2.2.6",
       "hashPath": "microsoft.entityframeworkcore.sqlserver.2.2.6.nupkg.sha512"
+    },
+    "Microsoft.EntityFrameworkCore.SqlServer.NetTopologySuite/2.2.6": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-7fj2D4jw0EaG4T1RMIUojjEZjXTHw+fyO8vO5wf9BJhoKn+us0zJZahPOuo4/+GsRqxfVwWB5glHsSR8eKTdmg==",
+      "path": "microsoft.entityframeworkcore.sqlserver.nettopologysuite/2.2.6",
+      "hashPath": "microsoft.entityframeworkcore.sqlserver.nettopologysuite.2.2.6.nupkg.sha512"
     },
     "Microsoft.Extensions.Caching.Abstractions/2.2.0": {
       "type": "package",
@@ -777,6 +838,20 @@
       "sha512": "sha512-+FWlwd//+Tt56316p00hVePBCouXyEzT86Jb3+AuRotTND0IYn0OO3obs1gnQEs/txEnt+rF2JBGLItTG+Be6A==",
       "path": "microsoft.win32.registry/4.5.0",
       "hashPath": "microsoft.win32.registry.4.5.0.nupkg.sha512"
+    },
+    "NetTopologySuite.Core/1.15.1": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-KafjJ04AQxyAc7I2hXvss849oEZZdU6+6yGZt/Zjh8ALEK9saXzKxPUsgf3APpRagYBIBfQbGMMD2ry06YXjsg==",
+      "path": "nettopologysuite.core/1.15.1",
+      "hashPath": "nettopologysuite.core.1.15.1.nupkg.sha512"
+    },
+    "NetTopologySuite.IO.SqlServerBytes/1.15.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-nzWrKCEDuicasyWvGA+juT0w9gRyO3oAmD2wKGpIsu4bstyYlGhcZ6aw8wn/BR/jYYtgETiTAehDgC9aWGU9Aw==",
+      "path": "nettopologysuite.io.sqlserverbytes/1.15.0",
+      "hashPath": "nettopologysuite.io.sqlserverbytes.1.15.0.nupkg.sha512"
     },
     "Newtonsoft.Json/11.0.2": {
       "type": "package",

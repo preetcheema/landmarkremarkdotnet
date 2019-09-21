@@ -1,4 +1,8 @@
-﻿namespace LandmarkRemark.Domain.Entities
+﻿using GeoAPI.Geometries;
+using System.Collections.Generic;
+using NetTopologySuite.Geometries;
+
+namespace LandmarkRemark.Domain.Entities
 {
     public class User
     {
@@ -8,5 +12,17 @@
         public string UserName { get; set; }
         public byte[] PasswordHash { get; set; }
         public byte[] PasswordSalt { get; set; }
+        
+        public ICollection<Note>UserNotes { get; set; }
+    }
+
+    public class Note
+    {
+        public int Id { get; set; }
+        public string Text { get; set; }
+        public Point Location { get; set; }  
+        
+       
+      
     }
 }

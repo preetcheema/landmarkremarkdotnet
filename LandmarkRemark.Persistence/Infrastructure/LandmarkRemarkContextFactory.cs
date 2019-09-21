@@ -22,7 +22,8 @@ namespace LandmarkRemark.Persistence.Infrastructure
             var connectionString = configuration.GetConnectionString(ConnectionStringName);
 
             var optionsBuilder = new DbContextOptionsBuilder<LandmarkRemarkContext>();
-            optionsBuilder.UseSqlServer(connectionString);
+            
+            optionsBuilder.UseSqlServer(connectionString, x=>x.UseNetTopologySuite());
 
             return new LandmarkRemarkContext(optionsBuilder.Options);
         }

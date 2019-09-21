@@ -10,9 +10,10 @@ C:\Programming\VS\LandmarkRemark\LandmarkRemark.Domain\obj\Debug\netcoreapp2.2\L
 C:\Programming\LandmarkProject\landmarkdotnet\landmarkremarkdotnet\LandmarkRemark.Domain\bin\Debug\netcoreapp2.2\LandmarkRemark.Domain.deps.json
 C:\Programming\LandmarkProject\landmarkdotnet\landmarkremarkdotnet\LandmarkRemark.Domain\bin\Debug\netcoreapp2.2\LandmarkRemark.Domain.dll
 C:\Programming\LandmarkProject\landmarkdotnet\landmarkremarkdotnet\LandmarkRemark.Domain\bin\Debug\netcoreapp2.2\LandmarkRemark.Domain.pdb
-C:\Programming\LandmarkProject\landmarkdotnet\landmarkremarkdotnet\LandmarkRemark.Domain\obj\Debug\netcoreapp2.2\LandmarkRemark.Domain.csprojAssemblyReference.cache
 C:\Programming\LandmarkProject\landmarkdotnet\landmarkremarkdotnet\LandmarkRemark.Domain\obj\Debug\netcoreapp2.2\LandmarkRemark.Domain.csproj.CoreCompileInputs.cache
 C:\Programming\LandmarkProject\landmarkdotnet\landmarkremarkdotnet\LandmarkRemark.Domain\obj\Debug\netcoreapp2.2\LandmarkRemark.Domain.AssemblyInfoInputs.cache
 C:\Programming\LandmarkProject\landmarkdotnet\landmarkremarkdotnet\LandmarkRemark.Domain\obj\Debug\netcoreapp2.2\LandmarkRemark.Domain.AssemblyInfo.cs
 C:\Programming\LandmarkProject\landmarkdotnet\landmarkremarkdotnet\LandmarkRemark.Domain\obj\Debug\netcoreapp2.2\LandmarkRemark.Domain.dll
 C:\Programming\LandmarkProject\landmarkdotnet\landmarkremarkdotnet\LandmarkRemark.Domain\obj\Debug\netcoreapp2.2\LandmarkRemark.Domain.pdb
+C:\Programming\LandmarkProject\landmarkdotnet\landmarkremarkdotnet\LandmarkRemark.Domain\obj\Debug\netcoreapp2.2\LandmarkRemark.Domain.csprojAssemblyReference.cache
+C:\Programming\LandmarkProject\landmarkdotnet\landmarkremarkdotnet\LandmarkRemark.Domain\obj\Debug\netcoreapp2.2\EFCoreSqlServerNetTopologySuite.cs

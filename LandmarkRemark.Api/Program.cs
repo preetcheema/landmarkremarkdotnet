@@ -25,6 +25,7 @@ namespace LandmarkRemark.Api
           {
               var context = scope.ServiceProvider.GetService<LandmarkRemarkContext>();
               context.Database.Migrate();
+              new LandmarkRemarkSeedDataCreator().CreateData(context);
           }
 
           host.Run();

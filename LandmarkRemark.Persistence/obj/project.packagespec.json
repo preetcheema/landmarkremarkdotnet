@@ -42,6 +42,10 @@
           "target": "Package",
           "version": "[2.2.6, )"
         },
+        "Microsoft.EntityFrameworkCore.SqlServer.NetTopologySuite": {
+          "target": "Package",
+          "version": "[2.2.6, )"
+        },
         "Microsoft.Extensions.Configuration": {
           "target": "Package",
           "version": "[2.2.0, )"

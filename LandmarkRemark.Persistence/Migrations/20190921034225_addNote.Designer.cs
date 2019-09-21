@@ -4,15 +4,16 @@ using LandmarkRemark.Persistence;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Metadata;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
-using NetTopologySuite.Geometries;
 
 namespace LandmarkRemark.Persistence.Migrations
 {
     [DbContext(typeof(LandmarkRemarkContext))]
-    partial class LandmarkRemarkContextModelSnapshot : ModelSnapshot
+    [Migration("20190921034225_addNote")]
+    partial class addNote
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder
@@ -25,10 +26,6 @@ namespace LandmarkRemark.Persistence.Migrations
                     b.Property<int>("Id")
                         .ValueGeneratedOnAdd()
                         .HasAnnotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn);
-
-                    b.Property<Point>("Location")
-                        .IsRequired()
-                        .HasColumnType("geometry");
 
                     b.Property<string>("Text")
                         .IsRequired()
