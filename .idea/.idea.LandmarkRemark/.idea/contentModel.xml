@@ -15,6 +15,9 @@
           <e p="AuthenticationSettings.cs" t="Include" />
         </e>
         <e p="LandmarkRemark.Api.csproj" t="IncludeRecursive" />
+        <e p="Models" t="Include">
+          <e p="CreateNoteViewModel.cs" t="Include" />
+        </e>
         <e p="obj" t="ExcludeRecursive">
           <e p="Debug" t="Include">
             <e p="netcoreapp2.2" t="Include">
@@ -40,6 +43,9 @@
         </e>
         <e p="LandmarkRemark.BusinessLogic.csproj" t="IncludeRecursive" />
         <e p="Notes" t="Include">
+          <e p="Commands" t="Include">
+            <e p="CreateNoteCommand.cs" t="Include" />
+          </e>
           <e p="Queries" t="Include">
             <e p="GetNotesRequest.cs" t="Include" />
           </e>

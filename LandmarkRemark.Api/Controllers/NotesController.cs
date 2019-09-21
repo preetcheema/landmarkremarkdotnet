@@ -1,5 +1,7 @@
 using System.Collections.Generic;
 using System.Threading.Tasks;
+using LandmarkRemark.Api.Models;
+using LandmarkRemark.BusinessLogic.Notes.Commands;
 using LandmarkRemark.BusinessLogic.Notes.Queries;
 using MediatR;
 using Microsoft.AspNetCore.Authorization;
@@ -39,5 +41,20 @@ namespace LandmarkRemark.Api.Controllers
 
             return Ok(result);
         }
+
+        [HttpPost]
+        public async Task<IActionResult> Post([FromBody]CreateNoteViewModel model)
+        {
+            //This could be added into global filter if null model validation is being checked at multiple places
+            if (model == null)
+            {
+                return BadRequest();
+            }
+
+            var userId = int.Parse(User.Identity.Name);
+            var result = await _mediator.Send(new CreateNoteCommand { UserId = userId,Text = model.Text, Latitude = model.Latitude, Longitude = model.Longitude});
+            return Ok(result);
+        }
+
     }
 }

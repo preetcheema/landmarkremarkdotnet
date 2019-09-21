@@ -1,12 +1,14 @@
-﻿using GeoAPI.Geometries;
-using System.Collections.Generic;
-using Microsoft.EntityFrameworkCore.Metadata.Builders;
+﻿using System.Collections.Generic;
 using NetTopologySuite.Geometries;
 
 namespace LandmarkRemark.Domain.Entities
 {
     public class User
     {
+        public User()
+        {
+            UserNotes=new List<Note>(); //could be hashset depending on if duplicate notes allowed , in that case, makes sense to override equality
+        }
         public int Id { get; set; }
         public string FirstName { get; set; }
         public string LastName { get; set; }
