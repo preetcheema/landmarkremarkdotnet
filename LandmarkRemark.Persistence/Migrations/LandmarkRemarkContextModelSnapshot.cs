@@ -51,6 +51,8 @@ namespace LandmarkRemark.Persistence.Migrations
                         .ValueGeneratedOnAdd()
                         .HasAnnotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn);
 
+                    b.Property<DateTime>("CreatedOn");
+
                     b.Property<string>("FirstName")
                         .IsRequired()
                         .HasMaxLength(100);

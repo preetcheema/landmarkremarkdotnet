@@ -25,14 +25,14 @@ namespace LandmarkRemark.Persistence
             {
                 new User
                 {
-                    FirstName = "Steve", LastName = "Smith", UserName = "steve.smith", UserNotes = new List<Note>
+                    FirstName = "Steve", LastName = "Smith", UserName = "steve.smith",CreatedOn=DateTime.Now, UserNotes = new List<Note>
                     {
                         new Note {Text = "Great place to visit", Location = new Point(145.1257112, -37.9131133), AddedOn=DateTime.Now}
-                    }
+                    },
                 },
                 new User
                 {
-                    FirstName = "Tom", LastName = "Cruise", UserName = "tom.cruise", UserNotes = new List<Note>
+                    FirstName = "Tom", LastName = "Cruise", UserName = "tom.cruise",CreatedOn=DateTime.Now, UserNotes = new List<Note>
                     {
                         new Note
                         {
@@ -42,7 +42,7 @@ namespace LandmarkRemark.Persistence
                     }
                 },
 
-                new User {FirstName = "Peter", LastName = "Mccormack", UserName = "peter.mccormack"}
+                new User {FirstName = "Peter", LastName = "Mccormack",CreatedOn=DateTime.Now,UserName = "peter.mccormack"}
             };
 
             foreach (var user in users)

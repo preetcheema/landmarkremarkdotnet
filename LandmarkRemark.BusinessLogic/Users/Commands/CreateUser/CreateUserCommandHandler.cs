@@ -3,6 +3,7 @@ using System.Linq;
 using System.Threading;
 using System.Threading.Tasks;
 using LandmarkRemark.BusinessLogic.Infrastructure;
+using LandmarkRemark.Common;
 using LandmarkRemark.Domain.Entities;
 using LandmarkRemark.Persistence;
 using MediatR;
@@ -12,10 +13,12 @@ namespace LandmarkRemark.BusinessLogic.Users.Commands.CreateUser
     public class CreateUserCommandHandler : IRequestHandler<CreateUserCommand,int>
     {
         private readonly LandmarkRemarkContext _context;
+        private readonly ITimeProvider _timeProvider;
 
-        public CreateUserCommandHandler(LandmarkRemarkContext context)
+        public CreateUserCommandHandler(LandmarkRemarkContext context, ITimeProvider timeProvider)
         {
             _context = context;
+            _timeProvider = timeProvider;
         }
 
         public async Task<int> Handle(CreateUserCommand request, CancellationToken cancellationToken)
@@ -27,7 +30,8 @@ namespace LandmarkRemark.BusinessLogic.Users.Commands.CreateUser
             {
                 FirstName = request.FirstName,
                 LastName = request.LastName,
-                UserName = request.Username
+                UserName = request.Username,
+                CreatedOn = _timeProvider.Now()
             };
 
             (byte[] passwordHash, byte[] passwordSalt) = CreatePasswordHash(request.Password);

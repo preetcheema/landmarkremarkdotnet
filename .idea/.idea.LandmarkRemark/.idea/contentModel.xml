@@ -177,6 +177,8 @@
           <e p="20190921040529_alterLocationMakeLocationNonNullable.Designer.cs" t="Include" />
           <e p="20190921233026_addColumnAddedOnToNote.cs" t="Include" />
           <e p="20190921233026_addColumnAddedOnToNote.Designer.cs" t="Include" />
+          <e p="20190922080734_addCreatedOnToUser.cs" t="Include" />
+          <e p="20190922080734_addCreatedOnToUser.Designer.cs" t="Include" />
           <e p="LandmarkRemarkContextModelSnapshot.cs" t="Include" />
         </e>
         <e p="obj" t="ExcludeRecursive">

@@ -1,5 +1,6 @@
 using System.Threading;
 using LandmarkRemark.BusinessLogic.Exceptions;
+using LandmarkRemark.BusinessLogic.Tests.Infrastructure;
 using LandmarkRemark.BusinessLogic.Users.Commands.CreateUser;
 using LandmarkRemark.BusinessLogic.Users.Queries;
 using Shouldly;
@@ -35,7 +36,7 @@ namespace LandmarkRemark.BusinessLogic.Tests.Users.Commands
             try
             {
               
-                var createdUserId = new CreateUserCommandHandler(_fixture.LandmarkContext).Handle(command, CancellationToken.None).GetAwaiter().GetResult();
+                var createdUserId = new CreateUserCommandHandler(_fixture.LandmarkContext,new FakeDatetimeProvider()).Handle(command, CancellationToken.None).GetAwaiter().GetResult();
                 createdUser = new GetUserByIdQueryHandler(_fixture.LandmarkContext).Handle(new GetUserByIdQuery {Id = createdUserId}, CancellationToken.None).GetAwaiter()
                     .GetResult();
             }
