@@ -85,6 +85,12 @@
           <e p="FakeDatetimeProvider.cs" t="Include" />
         </e>
         <e p="LandmarkRemark.BusinessLogic.Tests.csproj" t="IncludeRecursive" />
+        <e p="Notes" t="Include">
+          <e p="Commands" t="Include">
+            <e p="WhenNoteIsCreatedWithInvalidLatitidue.cs" t="Include" />
+            <e p="WhenValidNoteIsCreated.cs" t="Include" />
+          </e>
+        </e>
         <e p="obj" t="ExcludeRecursive">
           <e p="Debug" t="Include">
             <e p="netcoreapp2.2" t="Include">
@@ -93,10 +99,10 @@
             </e>
           </e>
         </e>
-        <e p="TestBase.cs" t="Include" />
+        <e p="TestBaseFixture.cs" t="Include" />
         <e p="Users" t="Include">
           <e p="Commands" t="Include">
-            <e p="CreateUserTestBase.cs" t="Include" />
+            <e p="WhenUserIsCreatedWithoutFirstName.cs" t="Include" />
             <e p="WhenUserIsCreatedWithValidRequest.cs" t="Include" />
           </e>
           <e p="Queries" t="Include">

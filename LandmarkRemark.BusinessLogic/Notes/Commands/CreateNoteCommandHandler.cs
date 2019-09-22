@@ -1,6 +1,7 @@
 using System;
 using System.Threading;
 using System.Threading.Tasks;
+using LandmarkRemark.BusinessLogic.Infrastructure;
 using LandmarkRemark.Common;
 using LandmarkRemark.Domain.Entities;
 using LandmarkRemark.Persistence;
@@ -21,14 +22,15 @@ namespace LandmarkRemark.BusinessLogic.Notes.Commands
             _timeProvider = timeProvider;
         }
 
-        
+
         public async Task<int> Handle(CreateNoteCommand request, CancellationToken cancellationToken)
         {
             var user = await _context.Users.SingleOrDefaultAsync(m => m.Id == request.UserId);
-            if (user == null)
-            {
-                throw new Exception("Fdas");
-            }
+
+            //We could not take int as parameter in validator in this case, but it gives us better flexibility
+            //we could also query database for userid existence, but to avoid  double trip, we check with user instead
+            var validator = new CreateNoteCommandValidator((x) => user != null);
+            validator.ValidateAndThrowUnProcessableEntityException(request);
 
             var note = new Note
             {

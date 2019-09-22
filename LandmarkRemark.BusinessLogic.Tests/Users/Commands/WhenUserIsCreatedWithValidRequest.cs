@@ -1,32 +1,29 @@
+using System.Threading;
+using LandmarkRemark.BusinessLogic.Exceptions;
 using LandmarkRemark.BusinessLogic.Users.Commands.CreateUser;
+using LandmarkRemark.BusinessLogic.Users.Queries;
 using Shouldly;
 using Xunit;
 
 namespace LandmarkRemark.BusinessLogic.Tests.Users.Commands
 {
-    public class WhenUserIsCreatedWithValidRequest : CreateUserTestBase
+    public class WhenUserIsCreatedWithValidRequest : IClassFixture<TestBaseFixture>
     {
-        private readonly CreateUserTestBase _fixture;
+      
+        private readonly TestBaseFixture _fixture;
 
-        public WhenUserIsCreatedWithValidRequest(TestBaseFixture fixture) : base(fixture)
+        public WhenUserIsCreatedWithValidRequest(TestBaseFixture fixture)
         {
+            _fixture = fixture;
         }
 
         [Fact]
         public void UserIsCreatedWithCorrectInformation()
         {
-            CouldNotCreateUserException.ShouldBeNull();
-            CreatedUserNotFoundException.ShouldBeNull();
-            Createduser.ShouldSatisfyAllConditions(
-                () => Createduser.FirstName.ShouldBe("Marco"),
-                () => Createduser.LastName.ShouldBe("Polo"),
-                () => Createduser.UserName.ShouldBe("marco.polo")
-            );
-        }
-
-
-        public override CreateUserCommand GetCommand()
-        {
+            UserDetailModel createdUser=null;
+            UnProcessableEntityException couldNotCreateUserException = null;
+            EntityNotFoundException createdUserNotFoundException = null;
+            
             var command = new CreateUserCommand
             {
                 FirstName = "Marco",
@@ -34,7 +31,33 @@ namespace LandmarkRemark.BusinessLogic.Tests.Users.Commands
                 Password = "marcopolo",
                 Username = "marco.polo"
             };
-            return command;
+            
+            try
+            {
+              
+                var createdUserId = new CreateUserCommandHandler(_fixture.LandmarkContext).Handle(command, CancellationToken.None).GetAwaiter().GetResult();
+                createdUser = new GetUserByIdQueryHandler(_fixture.LandmarkContext).Handle(new GetUserByIdQuery {Id = createdUserId}, CancellationToken.None).GetAwaiter()
+                    .GetResult();
+            }
+            catch (UnProcessableEntityException ex)
+            {
+                couldNotCreateUserException = ex;
+            }
+            catch (EntityNotFoundException ex)
+            {
+                createdUserNotFoundException = ex;
+            }
+            
+            couldNotCreateUserException.ShouldBeNull();
+            createdUserNotFoundException.ShouldBeNull();
+            createdUser.ShouldSatisfyAllConditions(
+                () => createdUser.FirstName.ShouldBe("Marco"),
+                () => createdUser.LastName.ShouldBe("Polo"),
+                () => createdUser.UserName.ShouldBe("marco.polo")
+            );
         }
+
+
+      
     }
 }

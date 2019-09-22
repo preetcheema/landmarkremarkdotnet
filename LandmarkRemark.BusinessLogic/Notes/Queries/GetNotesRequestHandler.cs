@@ -9,6 +9,13 @@ using Microsoft.EntityFrameworkCore;
 
 namespace LandmarkRemark.BusinessLogic.Notes.Queries
 {
+    /// <remarks>
+    /// This is a simplistic implementation where we return all the notes
+    /// In real situation we may need to return only a subset of notes within the visible bounds of maps(google maps returns the coordinates of visible map area)
+    /// Then also, we may need to think of lots of different scenario, for example , if map is zoomed out to a very large area
+    /// we may not want to just return 10000 top notes that may belong to very small area. in that case, we may want to divide the visible area
+    /// into smaller areas and then return notes from those areas.
+    /// </remarks>
     public class GetNotesRequestHandler : IRequestHandler<GetNotesRequest, IEnumerable<UserNoteDetailModel>>
     {
         private readonly LandmarkRemarkContext _context;
