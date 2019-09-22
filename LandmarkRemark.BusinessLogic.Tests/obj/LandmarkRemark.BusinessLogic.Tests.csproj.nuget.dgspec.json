@@ -1,0 +1,345 @@
+{
+  "format": 1,
+  "restore": {
+    "C:\\Programming\\LandmarkProject\\landmarkdotnet\\landmarkremarkdotnet\\LandmarkRemark.BusinessLogic.Tests\\LandmarkRemark.BusinessLogic.Tests.csproj": {}
+  },
+  "projects": {
+    "C:\\Programming\\LandmarkProject\\landmarkdotnet\\landmarkremarkdotnet\\LandmarkRemark.BusinessLogic.Tests\\LandmarkRemark.BusinessLogic.Tests.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Programming\\LandmarkProject\\landmarkdotnet\\landmarkremarkdotnet\\LandmarkRemark.BusinessLogic.Tests\\LandmarkRemark.BusinessLogic.Tests.csproj",
+        "projectName": "LandmarkRemark.BusinessLogic.Tests",
+        "projectPath": "C:\\Programming\\LandmarkProject\\landmarkdotnet\\landmarkremarkdotnet\\LandmarkRemark.BusinessLogic.Tests\\LandmarkRemark.BusinessLogic.Tests.csproj",
+        "packagesPath": "C:\\Users\\preet\\.nuget\\packages\\",
+        "outputPath": "C:\\Programming\\LandmarkProject\\landmarkdotnet\\landmarkremarkdotnet\\LandmarkRemark.BusinessLogic.Tests\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\preet\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "netcoreapp2.2"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "netcoreapp2.2": {
+            "projectReferences": {
+              "C:\\Programming\\LandmarkProject\\landmarkdotnet\\landmarkremarkdotnet\\LandmarkRemark.BusinessLogic\\LandmarkRemark.BusinessLogic.csproj": {
+                "projectPath": "C:\\Programming\\LandmarkProject\\landmarkdotnet\\landmarkremarkdotnet\\LandmarkRemark.BusinessLogic\\LandmarkRemark.BusinessLogic.csproj"
+              },
+              "C:\\Programming\\LandmarkProject\\landmarkdotnet\\landmarkremarkdotnet\\LandmarkRemark.Common\\LandmarkRemark.Common.csproj": {
+                "projectPath": "C:\\Programming\\LandmarkProject\\landmarkdotnet\\landmarkremarkdotnet\\LandmarkRemark.Common\\LandmarkRemark.Common.csproj"
+              },
+              "C:\\Programming\\LandmarkProject\\landmarkdotnet\\landmarkremarkdotnet\\LandmarkRemark.Persistence\\LandmarkRemark.Persistence.csproj": {
+                "projectPath": "C:\\Programming\\LandmarkProject\\landmarkdotnet\\landmarkremarkdotnet\\LandmarkRemark.Persistence\\LandmarkRemark.Persistence.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "netcoreapp2.2": {
+          "dependencies": {
+            "Microsoft.EntityFrameworkCore": {
+              "target": "Package",
+              "version": "[2.2.6, )"
+            },
+            "Microsoft.EntityFrameworkCore.InMemory": {
+              "target": "Package",
+              "version": "[2.2.6, )"
+            },
+            "Microsoft.NET.Test.Sdk": {
+              "target": "Package",
+              "version": "[15.9.0, )"
+            },
+            "Microsoft.NETCore.App": {
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[2.2.0, )",
+              "autoReferenced": true
+            },
+            "Shouldly": {
+              "target": "Package",
+              "version": "[3.0.2, )"
+            },
+            "xunit": {
+              "target": "Package",
+              "version": "[2.4.0, )"
+            },
+            "xunit.runner.visualstudio": {
+              "target": "Package",
+              "version": "[2.4.0, )"
+            }
+          },
+          "imports": [
+            "net461"
+          ],
+          "assetTargetFallback": true,
+          "warn": true
+        }
+      }
+    },
+    "C:\\Programming\\LandmarkProject\\landmarkdotnet\\landmarkremarkdotnet\\LandmarkRemark.BusinessLogic\\LandmarkRemark.BusinessLogic.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Programming\\LandmarkProject\\landmarkdotnet\\landmarkremarkdotnet\\LandmarkRemark.BusinessLogic\\LandmarkRemark.BusinessLogic.csproj",
+        "projectName": "LandmarkRemark.BusinessLogic",
+        "projectPath": "C:\\Programming\\LandmarkProject\\landmarkdotnet\\landmarkremarkdotnet\\LandmarkRemark.BusinessLogic\\LandmarkRemark.BusinessLogic.csproj",
+        "packagesPath": "C:\\Users\\preet\\.nuget\\packages\\",
+        "outputPath": "C:\\Programming\\LandmarkProject\\landmarkdotnet\\landmarkremarkdotnet\\LandmarkRemark.BusinessLogic\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\preet\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "netcoreapp2.2"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "netcoreapp2.2": {
+            "projectReferences": {
+              "C:\\Programming\\LandmarkProject\\landmarkdotnet\\landmarkremarkdotnet\\LandmarkRemark.Common\\LandmarkRemark.Common.csproj": {
+                "projectPath": "C:\\Programming\\LandmarkProject\\landmarkdotnet\\landmarkremarkdotnet\\LandmarkRemark.Common\\LandmarkRemark.Common.csproj"
+              },
+              "C:\\Programming\\LandmarkProject\\landmarkdotnet\\landmarkremarkdotnet\\LandmarkRemark.Persistence\\LandmarkRemark.Persistence.csproj": {
+                "projectPath": "C:\\Programming\\LandmarkProject\\landmarkdotnet\\landmarkremarkdotnet\\LandmarkRemark.Persistence\\LandmarkRemark.Persistence.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "netcoreapp2.2": {
+          "dependencies": {
+            "FluentValidation": {
+              "target": "Package",
+              "version": "[8.4.0, )"
+            },
+            "MediatR": {
+              "target": "Package",
+              "version": "[7.0.0, )"
+            },
+            "Microsoft.NETCore.App": {
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[2.2.0, )",
+              "autoReferenced": true
+            }
+          },
+          "imports": [
+            "net461"
+          ],
+          "assetTargetFallback": true,
+          "warn": true
+        }
+      }
+    },
+    "C:\\Programming\\LandmarkProject\\landmarkdotnet\\landmarkremarkdotnet\\LandmarkRemark.Common\\LandmarkRemark.Common.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Programming\\LandmarkProject\\landmarkdotnet\\landmarkremarkdotnet\\LandmarkRemark.Common\\LandmarkRemark.Common.csproj",
+        "projectName": "LandmarkRemark.Common",
+        "projectPath": "C:\\Programming\\LandmarkProject\\landmarkdotnet\\landmarkremarkdotnet\\LandmarkRemark.Common\\LandmarkRemark.Common.csproj",
+        "packagesPath": "C:\\Users\\preet\\.nuget\\packages\\",
+        "outputPath": "C:\\Programming\\LandmarkProject\\landmarkdotnet\\landmarkremarkdotnet\\LandmarkRemark.Common\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\preet\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "netcoreapp2.2"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "netcoreapp2.2": {
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "netcoreapp2.2": {
+          "dependencies": {
+            "Microsoft.NETCore.App": {
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[2.2.0, )",
+              "autoReferenced": true
+            }
+          },
+          "imports": [
+            "net461"
+          ],
+          "assetTargetFallback": true,
+          "warn": true
+        }
+      }
+    },
+    "C:\\Programming\\LandmarkProject\\landmarkdotnet\\landmarkremarkdotnet\\LandmarkRemark.Domain\\LandmarkRemark.Domain.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Programming\\LandmarkProject\\landmarkdotnet\\landmarkremarkdotnet\\LandmarkRemark.Domain\\LandmarkRemark.Domain.csproj",
+        "projectName": "LandmarkRemark.Domain",
+        "projectPath": "C:\\Programming\\LandmarkProject\\landmarkdotnet\\landmarkremarkdotnet\\LandmarkRemark.Domain\\LandmarkRemark.Domain.csproj",
+        "packagesPath": "C:\\Users\\preet\\.nuget\\packages\\",
+        "outputPath": "C:\\Programming\\LandmarkProject\\landmarkdotnet\\landmarkremarkdotnet\\LandmarkRemark.Domain\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\preet\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "netcoreapp2.2"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "netcoreapp2.2": {
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "netcoreapp2.2": {
+          "dependencies": {
+            "Microsoft.EntityFrameworkCore.SqlServer.NetTopologySuite": {
+              "target": "Package",
+              "version": "[2.2.6, )"
+            },
+            "Microsoft.NETCore.App": {
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[2.2.0, )",
+              "autoReferenced": true
+            }
+          },
+          "imports": [
+            "net461"
+          ],
+          "assetTargetFallback": true,
+          "warn": true
+        }
+      }
+    },
+    "C:\\Programming\\LandmarkProject\\landmarkdotnet\\landmarkremarkdotnet\\LandmarkRemark.Persistence\\LandmarkRemark.Persistence.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Programming\\LandmarkProject\\landmarkdotnet\\landmarkremarkdotnet\\LandmarkRemark.Persistence\\LandmarkRemark.Persistence.csproj",
+        "projectName": "LandmarkRemark.Persistence",
+        "projectPath": "C:\\Programming\\LandmarkProject\\landmarkdotnet\\landmarkremarkdotnet\\LandmarkRemark.Persistence\\LandmarkRemark.Persistence.csproj",
+        "packagesPath": "C:\\Users\\preet\\.nuget\\packages\\",
+        "outputPath": "C:\\Programming\\LandmarkProject\\landmarkdotnet\\landmarkremarkdotnet\\LandmarkRemark.Persistence\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\preet\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "netcoreapp2.2"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "netcoreapp2.2": {
+            "projectReferences": {
+              "C:\\Programming\\LandmarkProject\\landmarkdotnet\\landmarkremarkdotnet\\LandmarkRemark.Domain\\LandmarkRemark.Domain.csproj": {
+                "projectPath": "C:\\Programming\\LandmarkProject\\landmarkdotnet\\landmarkremarkdotnet\\LandmarkRemark.Domain\\LandmarkRemark.Domain.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "netcoreapp2.2": {
+          "dependencies": {
+            "Microsoft.EntityFrameworkCore": {
+              "target": "Package",
+              "version": "[2.2.6, )"
+            },
+            "Microsoft.EntityFrameworkCore.SqlServer": {
+              "target": "Package",
+              "version": "[2.2.6, )"
+            },
+            "Microsoft.EntityFrameworkCore.SqlServer.NetTopologySuite": {
+              "target": "Package",
+              "version": "[2.2.6, )"
+            },
+            "Microsoft.Extensions.Configuration": {
+              "target": "Package",
+              "version": "[2.2.0, )"
+            },
+            "Microsoft.Extensions.Configuration.Json": {
+              "target": "Package",
+              "version": "[2.2.0, )"
+            },
+            "Microsoft.NETCore.App": {
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[2.2.0, )",
+              "autoReferenced": true
+            }
+          },
+          "imports": [
+            "net461"
+          ],
+          "assetTargetFallback": true,
+          "warn": true
+        }
+      }
+    }
+  }
+}
