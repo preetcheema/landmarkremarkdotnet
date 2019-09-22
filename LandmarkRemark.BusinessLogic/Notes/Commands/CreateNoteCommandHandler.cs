@@ -27,7 +27,7 @@ namespace LandmarkRemark.BusinessLogic.Notes.Commands
         {
             var user = await _context.Users.SingleOrDefaultAsync(m => m.Id == request.UserId);
 
-            //We could not take int as parameter in validator in this case, but it gives us better flexibility
+            //We could have decided to not take int as parameter in validator in this case, but it gives us better flexibility
             //we could also query database for userid existence, but to avoid  double trip, we check with user instead
             var validator = new CreateNoteCommandValidator((x) => user != null);
             validator.ValidateAndThrowUnProcessableEntityException(request);

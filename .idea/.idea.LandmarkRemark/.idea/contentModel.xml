@@ -46,6 +46,7 @@
           <e p="Commands" t="Include">
             <e p="CreateNoteCommand.cs" t="Include" />
             <e p="CreateNoteCommandHandler.cs" t="Include" />
+            <e p="CreateNoteCommandValidator.cs" t="Include" />
           </e>
           <e p="Queries" t="Include">
             <e p="GetNotesRequest.cs" t="Include" />
