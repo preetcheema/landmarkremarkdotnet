@@ -15,6 +15,7 @@
 
   <ItemGroup>
     <ProjectReference Include="..\LandmarkRemark.BusinessLogic\LandmarkRemark.BusinessLogic.csproj" />
+    <ProjectReference Include="..\LandmarkRemark.Infrastructure\LandmarkRemark.Infrastructure.csproj" />
     <ProjectReference Include="..\LandmarkRemark.Persistence\LandmarkRemark.Persistence.csproj" />
   </ItemGroup>
 

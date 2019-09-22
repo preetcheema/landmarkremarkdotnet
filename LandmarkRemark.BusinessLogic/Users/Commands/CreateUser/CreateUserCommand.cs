@@ -2,7 +2,7 @@ using MediatR;
 
 namespace LandmarkRemark.BusinessLogic.Users.Commands.CreateUser
 {
-    public class CreateUserCommand : IRequest
+    public class CreateUserCommand : IRequest<int>
     {
         public string FirstName { get; set; }
         public string LastName { get; set; }

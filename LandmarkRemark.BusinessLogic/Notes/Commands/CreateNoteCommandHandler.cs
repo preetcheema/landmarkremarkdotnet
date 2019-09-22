@@ -1,6 +1,7 @@
 using System;
 using System.Threading;
 using System.Threading.Tasks;
+using LandmarkRemark.Common;
 using LandmarkRemark.Domain.Entities;
 using LandmarkRemark.Persistence;
 using MediatR;
@@ -12,10 +13,12 @@ namespace LandmarkRemark.BusinessLogic.Notes.Commands
     public class CreateNoteCommandHandler : IRequestHandler<CreateNoteCommand, int>
     {
         private readonly LandmarkRemarkContext _context;
+        private readonly ITimeProvider _timeProvider;
 
-        public CreateNoteCommandHandler(LandmarkRemarkContext context)
+        public CreateNoteCommandHandler(LandmarkRemarkContext context, ITimeProvider timeProvider)
         {
             _context = context;
+            _timeProvider = timeProvider;
         }
 
         
@@ -30,7 +33,8 @@ namespace LandmarkRemark.BusinessLogic.Notes.Commands
             var note = new Note
             {
                 Text = request.Text,
-                Location = new Point(request.Longitude, request.Latitude)
+                Location = new Point(request.Longitude, request.Latitude),
+                AddedOn = _timeProvider.Now()
             };
             user.UserNotes.Add(note);
 

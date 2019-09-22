@@ -1,7 +1,6 @@
 using System.Threading;
 using System.Threading.Tasks;
 using LandmarkRemark.BusinessLogic.Exceptions;
-using LandmarkRemark.Domain;
 using LandmarkRemark.Domain.Entities;
 using LandmarkRemark.Persistence;
 using MediatR;

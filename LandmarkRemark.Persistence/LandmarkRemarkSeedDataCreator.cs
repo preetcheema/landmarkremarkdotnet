@@ -1,3 +1,4 @@
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using LandmarkRemark.Domain.Entities;
@@ -26,7 +27,7 @@ namespace LandmarkRemark.Persistence
                 {
                     FirstName = "Steve", LastName = "Smith", UserName = "steve.smith", UserNotes = new List<Note>
                     {
-                        new Note {Text = "Great place to visit", Location = new Point(145.1257112, -37.9131133)}
+                        new Note {Text = "Great place to visit", Location = new Point(145.1257112, -37.9131133), AddedOn=DateTime.Now}
                     }
                 },
                 new User
@@ -35,9 +36,9 @@ namespace LandmarkRemark.Persistence
                     {
                         new Note
                         {
-                            Text = "Great place to visit", Location = new Point(153.0272569, -27.4640302)
+                            Text = "Great place to visit", Location = new Point(153.0272569, -27.4640302), AddedOn=DateTime.Now
                         },
-                        new Note {Text = "Great food", Location = new Point(152.9986068, -27.4522202)}
+                        new Note {Text = "Great food", Location = new Point(152.9986068, -27.4522202),AddedOn=DateTime.Now}
                     }
                 },
 

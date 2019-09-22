@@ -4528,6 +4528,7 @@
         "framework": ".NETCoreApp,Version=v2.2",
         "dependencies": {
           "FluentValidation": "8.4.0",
+          "LandmarkRemark.Common": "1.0.0",
           "LandmarkRemark.Persistence": "1.0.0",
           "MediatR": "7.0.0"
         },
@@ -4536,6 +4537,16 @@
         },
         "runtime": {
           "bin/placeholder/LandmarkRemark.BusinessLogic.dll": {}
+        }
+      },
+      "LandmarkRemark.Common/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v2.2",
+        "compile": {
+          "bin/placeholder/LandmarkRemark.Common.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/LandmarkRemark.Common.dll": {}
         }
       },
       "LandmarkRemark.Domain/1.0.0": {
@@ -4549,6 +4560,19 @@
         },
         "runtime": {
           "bin/placeholder/LandmarkRemark.Domain.dll": {}
+        }
+      },
+      "LandmarkRemark.Infrastructure/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v2.2",
+        "dependencies": {
+          "LandmarkRemark.Common": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/LandmarkRemark.Infrastructure.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/LandmarkRemark.Infrastructure.dll": {}
         }
       },
       "LandmarkRemark.Persistence/1.0.0": {
@@ -12845,10 +12869,20 @@
       "path": "../LandmarkRemark.BusinessLogic/LandmarkRemark.BusinessLogic.csproj",
       "msbuildProject": "../LandmarkRemark.BusinessLogic/LandmarkRemark.BusinessLogic.csproj"
     },
+    "LandmarkRemark.Common/1.0.0": {
+      "type": "project",
+      "path": "../LandmarkRemark.Common/LandmarkRemark.Common.csproj",
+      "msbuildProject": "../LandmarkRemark.Common/LandmarkRemark.Common.csproj"
+    },
     "LandmarkRemark.Domain/1.0.0": {
       "type": "project",
       "path": "../LandmarkRemark.Domain/LandmarkRemark.Domain.csproj",
       "msbuildProject": "../LandmarkRemark.Domain/LandmarkRemark.Domain.csproj"
+    },
+    "LandmarkRemark.Infrastructure/1.0.0": {
+      "type": "project",
+      "path": "../LandmarkRemark.Infrastructure/LandmarkRemark.Infrastructure.csproj",
+      "msbuildProject": "../LandmarkRemark.Infrastructure/LandmarkRemark.Infrastructure.csproj"
     },
     "LandmarkRemark.Persistence/1.0.0": {
       "type": "project",
@@ -12859,6 +12893,7 @@
   "projectFileDependencyGroups": {
     ".NETCoreApp,Version=v2.2": [
       "LandmarkRemark.BusinessLogic >= 1.0.0",
+      "LandmarkRemark.Infrastructure >= 1.0.0",
       "LandmarkRemark.Persistence >= 1.0.0",
       "MediatR >= 7.0.0",
       "MediatR.Extensions.Microsoft.DependencyInjection >= 7.0.0",
@@ -12900,6 +12935,9 @@
           "projectReferences": {
             "C:\\Programming\\LandmarkProject\\landmarkdotnet\\landmarkremarkdotnet\\LandmarkRemark.BusinessLogic\\LandmarkRemark.BusinessLogic.csproj": {
               "projectPath": "C:\\Programming\\LandmarkProject\\landmarkdotnet\\landmarkremarkdotnet\\LandmarkRemark.BusinessLogic\\LandmarkRemark.BusinessLogic.csproj"
+            },
+            "C:\\Programming\\LandmarkProject\\landmarkdotnet\\landmarkremarkdotnet\\LandmarkRemark.Infrastructure\\LandmarkRemark.Infrastructure.csproj": {
+              "projectPath": "C:\\Programming\\LandmarkProject\\landmarkdotnet\\landmarkremarkdotnet\\LandmarkRemark.Infrastructure\\LandmarkRemark.Infrastructure.csproj"
             },
             "C:\\Programming\\LandmarkProject\\landmarkdotnet\\landmarkremarkdotnet\\LandmarkRemark.Persistence\\LandmarkRemark.Persistence.csproj": {
               "projectPath": "C:\\Programming\\LandmarkProject\\landmarkdotnet\\landmarkremarkdotnet\\LandmarkRemark.Persistence\\LandmarkRemark.Persistence.csproj"

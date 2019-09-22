@@ -10,6 +10,7 @@
     </ItemGroup>
 
     <ItemGroup>
+      <ProjectReference Include="..\LandmarkRemark.Common\LandmarkRemark.Common.csproj" />
       <ProjectReference Include="..\LandmarkRemark.Persistence\LandmarkRemark.Persistence.csproj" />
     </ItemGroup>
 

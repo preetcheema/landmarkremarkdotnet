@@ -9,6 +9,8 @@ namespace LandmarkRemark.Domain.Entities
         public Point Location { get; set; }  
         
         public User User { get; set; }
+
+        public System.DateTime AddedOn { get; set; }
       
     }
 }

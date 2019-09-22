@@ -9,7 +9,7 @@ using MediatR;
 
 namespace LandmarkRemark.BusinessLogic.Users.Commands.CreateUser
 {
-    internal class CreateUserCommandHandler : IRequestHandler<CreateUserCommand>
+    public class CreateUserCommandHandler : IRequestHandler<CreateUserCommand,int>
     {
         private readonly LandmarkRemarkContext _context;
 
@@ -18,7 +18,7 @@ namespace LandmarkRemark.BusinessLogic.Users.Commands.CreateUser
             _context = context;
         }
 
-        public async Task<Unit> Handle(CreateUserCommand request, CancellationToken cancellationToken)
+        public async Task<int> Handle(CreateUserCommand request, CancellationToken cancellationToken)
         {
             var validator = new CreateUserCommandValidator((username) => !_context.Users.Any(x => x.UserName == username));
             validator.ValidateAndThrowUnProcessableEntityException(request);
@@ -36,7 +36,7 @@ namespace LandmarkRemark.BusinessLogic.Users.Commands.CreateUser
             user.PasswordSalt = passwordSalt;
             _context.Users.Add(user);
             await _context.SaveChangesAsync(cancellationToken);
-            return Unit.Value;
+            return user.Id;
         }
 
         private (byte[]passwordHash, byte[]passwordSalt) CreatePasswordHash(string password)

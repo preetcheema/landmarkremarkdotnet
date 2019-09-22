@@ -25,6 +25,7 @@
       "LandmarkRemark.Api/1.0.0": {
         "dependencies": {
           "LandmarkRemark.BusinessLogic": "1.0.0",
+          "LandmarkRemark.Infrastructure": "1.0.0",
           "LandmarkRemark.Persistence": "1.0.0",
           "MediatR": "7.0.0",
           "MediatR.Extensions.Microsoft.DependencyInjection": "7.0.0",
@@ -506,6 +507,7 @@
       "LandmarkRemark.BusinessLogic/1.0.0": {
         "dependencies": {
           "FluentValidation": "8.4.0",
+          "LandmarkRemark.Common": "1.0.0",
           "LandmarkRemark.Persistence": "1.0.0",
           "MediatR": "7.0.0"
         },
@@ -514,6 +516,14 @@
         },
         "compile": {
           "LandmarkRemark.BusinessLogic.dll": {}
+        }
+      },
+      "LandmarkRemark.Common/1.0.0": {
+        "runtime": {
+          "LandmarkRemark.Common.dll": {}
+        },
+        "compile": {
+          "LandmarkRemark.Common.dll": {}
         }
       },
       "LandmarkRemark.Domain/1.0.0": {
@@ -525,6 +535,17 @@
         },
         "compile": {
           "LandmarkRemark.Domain.dll": {}
+        }
+      },
+      "LandmarkRemark.Infrastructure/1.0.0": {
+        "dependencies": {
+          "LandmarkRemark.Common": "1.0.0"
+        },
+        "runtime": {
+          "LandmarkRemark.Infrastructure.dll": {}
+        },
+        "compile": {
+          "LandmarkRemark.Infrastructure.dll": {}
         }
       },
       "LandmarkRemark.Persistence/1.0.0": {
@@ -3649,7 +3670,17 @@
       "serviceable": false,
       "sha512": ""
     },
+    "LandmarkRemark.Common/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
     "LandmarkRemark.Domain/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "LandmarkRemark.Infrastructure/1.0.0": {
       "type": "project",
       "serviceable": false,
       "sha512": ""

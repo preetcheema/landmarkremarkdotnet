@@ -22,6 +22,9 @@
           "C:\\Programming\\LandmarkProject\\landmarkdotnet\\landmarkremarkdotnet\\LandmarkRemark.BusinessLogic\\LandmarkRemark.BusinessLogic.csproj": {
             "projectPath": "C:\\Programming\\LandmarkProject\\landmarkdotnet\\landmarkremarkdotnet\\LandmarkRemark.BusinessLogic\\LandmarkRemark.BusinessLogic.csproj"
           },
+          "C:\\Programming\\LandmarkProject\\landmarkdotnet\\landmarkremarkdotnet\\LandmarkRemark.Infrastructure\\LandmarkRemark.Infrastructure.csproj": {
+            "projectPath": "C:\\Programming\\LandmarkProject\\landmarkdotnet\\landmarkremarkdotnet\\LandmarkRemark.Infrastructure\\LandmarkRemark.Infrastructure.csproj"
+          },
           "C:\\Programming\\LandmarkProject\\landmarkdotnet\\landmarkremarkdotnet\\LandmarkRemark.Persistence\\LandmarkRemark.Persistence.csproj": {
             "projectPath": "C:\\Programming\\LandmarkProject\\landmarkdotnet\\landmarkremarkdotnet\\LandmarkRemark.Persistence\\LandmarkRemark.Persistence.csproj"
           }

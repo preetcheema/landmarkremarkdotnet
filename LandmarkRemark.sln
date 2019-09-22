@@ -3,13 +3,21 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.29209.62
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LandmarkRemark.Api", "LandmarkRemark.Api\LandmarkRemark.Api.csproj", "{62D8D329-2CE8-4B63-A291-247FE976C008}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "LandmarkRemark.Api", "LandmarkRemark.Api\LandmarkRemark.Api.csproj", "{62D8D329-2CE8-4B63-A291-247FE976C008}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LandmarkRemark.Domain", "LandmarkRemark.Domain\LandmarkRemark.Domain.csproj", "{46B9F402-3473-4E86-833D-DDB88F2A2F30}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "LandmarkRemark.Domain", "LandmarkRemark.Domain\LandmarkRemark.Domain.csproj", "{46B9F402-3473-4E86-833D-DDB88F2A2F30}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LandmarkRemark.Persistence", "LandmarkRemark.Persistence\LandmarkRemark.Persistence.csproj", "{72CAF00B-AC0A-4F84-8B98-3BBE26098858}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "LandmarkRemark.Persistence", "LandmarkRemark.Persistence\LandmarkRemark.Persistence.csproj", "{72CAF00B-AC0A-4F84-8B98-3BBE26098858}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LandmarkRemark.BusinessLogic", "LandmarkRemark.BusinessLogic\LandmarkRemark.BusinessLogic.csproj", "{B436D726-79F1-4C85-9041-EDE59DF0AC71}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "LandmarkRemark.BusinessLogic", "LandmarkRemark.BusinessLogic\LandmarkRemark.BusinessLogic.csproj", "{B436D726-79F1-4C85-9041-EDE59DF0AC71}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Tests", "Tests", "{4ED9E6BE-342A-42FF-9D75-5176E9167C72}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LandmarkRemark.BusinessLogic.Tests", "LandmarkRemark.BusinessLogic.Tests\LandmarkRemark.BusinessLogic.Tests.csproj", "{45BC02E4-4EA9-40B4-A29E-8D538B0F88D1}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LandmarkRemark.Common", "LandmarkRemark.Common\LandmarkRemark.Common.csproj", "{379FEF76-5DE7-485C-BA25-C238EAE71641}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LandmarkRemark.Infrastructure", "LandmarkRemark.Infrastructure\LandmarkRemark.Infrastructure.csproj", "{FC7AC6E5-1F81-4E0C-AFFB-05B624574483}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -33,9 +41,24 @@ Global
 		{B436D726-79F1-4C85-9041-EDE59DF0AC71}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{B436D726-79F1-4C85-9041-EDE59DF0AC71}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{B436D726-79F1-4C85-9041-EDE59DF0AC71}.Release|Any CPU.Build.0 = Release|Any CPU
+		{45BC02E4-4EA9-40B4-A29E-8D538B0F88D1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{45BC02E4-4EA9-40B4-A29E-8D538B0F88D1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{45BC02E4-4EA9-40B4-A29E-8D538B0F88D1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{45BC02E4-4EA9-40B4-A29E-8D538B0F88D1}.Release|Any CPU.Build.0 = Release|Any CPU
+		{379FEF76-5DE7-485C-BA25-C238EAE71641}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{379FEF76-5DE7-485C-BA25-C238EAE71641}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{379FEF76-5DE7-485C-BA25-C238EAE71641}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{379FEF76-5DE7-485C-BA25-C238EAE71641}.Release|Any CPU.Build.0 = Release|Any CPU
+		{FC7AC6E5-1F81-4E0C-AFFB-05B624574483}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FC7AC6E5-1F81-4E0C-AFFB-05B624574483}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FC7AC6E5-1F81-4E0C-AFFB-05B624574483}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FC7AC6E5-1F81-4E0C-AFFB-05B624574483}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{45BC02E4-4EA9-40B4-A29E-8D538B0F88D1} = {4ED9E6BE-342A-42FF-9D75-5176E9167C72}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {044FB607-D297-4265-9E1D-633F448A22F4}

@@ -26,6 +26,8 @@ namespace LandmarkRemark.Persistence.Migrations
                         .ValueGeneratedOnAdd()
                         .HasAnnotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn);
 
+                    b.Property<DateTime>("AddedOn");
+
                     b.Property<Point>("Location")
                         .IsRequired()
                         .HasColumnType("geometry");
@@ -77,7 +79,7 @@ namespace LandmarkRemark.Persistence.Migrations
 
             modelBuilder.Entity("LandmarkRemark.Domain.Entities.Note", b =>
                 {
-                    b.HasOne("LandmarkRemark.Domain.Entities.User")
+                    b.HasOne("LandmarkRemark.Domain.Entities.User", "User")
                         .WithMany("UserNotes")
                         .HasForeignKey("UserId");
                 });

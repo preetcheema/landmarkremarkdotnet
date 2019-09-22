@@ -41,3 +41,7 @@ C:\Programming\LandmarkProject\landmarkdotnet\landmarkremarkdotnet\LandmarkRemar
 C:\Programming\LandmarkProject\landmarkdotnet\landmarkremarkdotnet\LandmarkRemark.Api\obj\Debug\netcoreapp2.2\LandmarkRemark.Api.dll
 C:\Programming\LandmarkProject\landmarkdotnet\landmarkremarkdotnet\LandmarkRemark.Api\obj\Debug\netcoreapp2.2\LandmarkRemark.Api.pdb
 C:\Programming\LandmarkProject\landmarkdotnet\landmarkremarkdotnet\LandmarkRemark.Api\obj\Debug\netcoreapp2.2\EFCoreSqlServerNetTopologySuite.cs
+C:\Programming\LandmarkProject\landmarkdotnet\landmarkremarkdotnet\LandmarkRemark.Api\bin\Debug\netcoreapp2.2\LandmarkRemark.Common.dll
+C:\Programming\LandmarkProject\landmarkdotnet\landmarkremarkdotnet\LandmarkRemark.Api\bin\Debug\netcoreapp2.2\LandmarkRemark.Infrastructure.dll
+C:\Programming\LandmarkProject\landmarkdotnet\landmarkremarkdotnet\LandmarkRemark.Api\bin\Debug\netcoreapp2.2\LandmarkRemark.Infrastructure.pdb
+C:\Programming\LandmarkProject\landmarkdotnet\landmarkremarkdotnet\LandmarkRemark.Api\bin\Debug\netcoreapp2.2\LandmarkRemark.Common.pdb

@@ -26,3 +26,5 @@ C:\Programming\LandmarkProject\landmarkdotnet\landmarkremarkdotnet\LandmarkRemar
 C:\Programming\LandmarkProject\landmarkdotnet\landmarkremarkdotnet\LandmarkRemark.BusinessLogic\obj\Debug\netcoreapp2.2\LandmarkRemark.BusinessLogic.csproj.CopyComplete
 C:\Programming\LandmarkProject\landmarkdotnet\landmarkremarkdotnet\LandmarkRemark.BusinessLogic\obj\Debug\netcoreapp2.2\LandmarkRemark.BusinessLogic.dll
 C:\Programming\LandmarkProject\landmarkdotnet\landmarkremarkdotnet\LandmarkRemark.BusinessLogic\obj\Debug\netcoreapp2.2\LandmarkRemark.BusinessLogic.pdb
+C:\Programming\LandmarkProject\landmarkdotnet\landmarkremarkdotnet\LandmarkRemark.BusinessLogic\bin\Debug\netcoreapp2.2\LandmarkRemark.Common.dll
+C:\Programming\LandmarkProject\landmarkdotnet\landmarkremarkdotnet\LandmarkRemark.BusinessLogic\bin\Debug\netcoreapp2.2\LandmarkRemark.Common.pdb

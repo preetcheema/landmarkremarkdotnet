@@ -1,0 +1,12 @@
+C:\Programming\LandmarkProject\landmarkdotnet\landmarkremarkdotnet\LandmarkRemark.Infrastructure\bin\Debug\netcoreapp2.2\LandmarkRemark.Infrastructure.deps.json
+C:\Programming\LandmarkProject\landmarkdotnet\landmarkremarkdotnet\LandmarkRemark.Infrastructure\bin\Debug\netcoreapp2.2\LandmarkRemark.Infrastructure.dll
+C:\Programming\LandmarkProject\landmarkdotnet\landmarkremarkdotnet\LandmarkRemark.Infrastructure\bin\Debug\netcoreapp2.2\LandmarkRemark.Infrastructure.pdb
+C:\Programming\LandmarkProject\landmarkdotnet\landmarkremarkdotnet\LandmarkRemark.Infrastructure\bin\Debug\netcoreapp2.2\LandmarkRemark.Common.dll
+C:\Programming\LandmarkProject\landmarkdotnet\landmarkremarkdotnet\LandmarkRemark.Infrastructure\bin\Debug\netcoreapp2.2\LandmarkRemark.Common.pdb
+C:\Programming\LandmarkProject\landmarkdotnet\landmarkremarkdotnet\LandmarkRemark.Infrastructure\obj\Debug\netcoreapp2.2\LandmarkRemark.Infrastructure.csprojAssemblyReference.cache
+C:\Programming\LandmarkProject\landmarkdotnet\landmarkremarkdotnet\LandmarkRemark.Infrastructure\obj\Debug\netcoreapp2.2\LandmarkRemark.Infrastructure.csproj.CoreCompileInputs.cache
+C:\Programming\LandmarkProject\landmarkdotnet\landmarkremarkdotnet\LandmarkRemark.Infrastructure\obj\Debug\netcoreapp2.2\LandmarkRemark.Infrastructure.AssemblyInfoInputs.cache
+C:\Programming\LandmarkProject\landmarkdotnet\landmarkremarkdotnet\LandmarkRemark.Infrastructure\obj\Debug\netcoreapp2.2\LandmarkRemark.Infrastructure.AssemblyInfo.cs
+C:\Programming\LandmarkProject\landmarkdotnet\landmarkremarkdotnet\LandmarkRemark.Infrastructure\obj\Debug\netcoreapp2.2\LandmarkRemark.Infrastructure.csproj.CopyComplete
+C:\Programming\LandmarkProject\landmarkdotnet\landmarkremarkdotnet\LandmarkRemark.Infrastructure\obj\Debug\netcoreapp2.2\LandmarkRemark.Infrastructure.dll
+C:\Programming\LandmarkProject\landmarkdotnet\landmarkremarkdotnet\LandmarkRemark.Infrastructure\obj\Debug\netcoreapp2.2\LandmarkRemark.Infrastructure.pdb

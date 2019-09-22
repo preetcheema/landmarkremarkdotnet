@@ -10,8 +10,8 @@ namespace LandmarkRemark.Persistence.Configurations
         {
             builder.HasKey(m => m.Id);
             builder.Property(m => m.Text).IsRequired().HasMaxLength(50);
-           builder.Property(m => m.Location).HasColumnType("geometry").IsRequired();
-
+            builder.Property(m => m.AddedOn).IsRequired();
+            builder.Property(m => m.Location).HasColumnType("geometry").IsRequired();
         }
     }
 }

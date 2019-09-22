@@ -1048,6 +1048,16 @@
           "ref/netstandard1.3/System.Threading.Tasks.dll": {}
         }
       },
+      "LandmarkRemark.Common/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v2.2",
+        "compile": {
+          "bin/placeholder/LandmarkRemark.Common.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/LandmarkRemark.Common.dll": {}
+        }
+      },
       "LandmarkRemark.Domain/1.0.0": {
         "type": "project",
         "framework": ".NETCoreApp,Version=v2.2",
@@ -4358,6 +4368,11 @@
         "system.threading.tasks.nuspec"
       ]
     },
+    "LandmarkRemark.Common/1.0.0": {
+      "type": "project",
+      "path": "../LandmarkRemark.Common/LandmarkRemark.Common.csproj",
+      "msbuildProject": "../LandmarkRemark.Common/LandmarkRemark.Common.csproj"
+    },
     "LandmarkRemark.Domain/1.0.0": {
       "type": "project",
       "path": "../LandmarkRemark.Domain/LandmarkRemark.Domain.csproj",
@@ -4372,6 +4387,7 @@
   "projectFileDependencyGroups": {
     ".NETCoreApp,Version=v2.2": [
       "FluentValidation >= 8.4.0",
+      "LandmarkRemark.Common >= 1.0.0",
       "LandmarkRemark.Persistence >= 1.0.0",
       "MediatR >= 7.0.0",
       "Microsoft.NETCore.App >= 2.2.0"
@@ -4407,6 +4423,9 @@
       "frameworks": {
         "netcoreapp2.2": {
           "projectReferences": {
+            "C:\\Programming\\LandmarkProject\\landmarkdotnet\\landmarkremarkdotnet\\LandmarkRemark.Common\\LandmarkRemark.Common.csproj": {
+              "projectPath": "C:\\Programming\\LandmarkProject\\landmarkdotnet\\landmarkremarkdotnet\\LandmarkRemark.Common\\LandmarkRemark.Common.csproj"
+            },
             "C:\\Programming\\LandmarkProject\\landmarkdotnet\\landmarkremarkdotnet\\LandmarkRemark.Persistence\\LandmarkRemark.Persistence.csproj": {
               "projectPath": "C:\\Programming\\LandmarkProject\\landmarkdotnet\\landmarkremarkdotnet\\LandmarkRemark.Persistence\\LandmarkRemark.Persistence.csproj"
             }

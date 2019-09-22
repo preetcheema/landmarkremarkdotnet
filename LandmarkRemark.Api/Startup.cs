@@ -6,6 +6,8 @@ using System.Text;
 using System.Threading.Tasks;
 using LandmarkRemark.Api.Infrastructure;
 using LandmarkRemark.BusinessLogic.Users.Queries;
+using LandmarkRemark.Common;
+using LandmarkRemark.Infrastructure;
 using LandmarkRemark.Persistence;
 using MediatR;
 using Microsoft.AspNetCore.Authentication.JwtBearer;
@@ -81,8 +83,8 @@ namespace LandmarkRemark.Api
                     };
                 });
 
-            // configure DI for application services
-            //     services.AddScoped<IUserService, UserService>();
+            services.AddSingleton<ITimeProvider, TimeProvider>();
+            
         }
 
         private static void AddMediatR(IServiceCollection services)
