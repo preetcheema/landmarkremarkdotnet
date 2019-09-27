@@ -1,5 +1,6 @@
 using System;
 using System.Collections.Generic;
+using System.Linq;
 
 namespace LandmarkRemark.BusinessLogic.Exceptions
 {
@@ -7,13 +8,14 @@ namespace LandmarkRemark.BusinessLogic.Exceptions
     {
         public UnProcessableEntityException()
         {
-            Errors=new List<string>();
-            ModelStateErrors=new List<ModelStateError>();
+            Errors= Enumerable.Empty<string>();
+            ModelStateErrors=Enumerable.Empty<ModelStateError>();
         }
 
         public UnProcessableEntityException(string msg):base(msg)
         {
-                
+            Errors= Enumerable.Empty<string>();
+            ModelStateErrors=Enumerable.Empty<ModelStateError>(); 
         }
         public IEnumerable<string> Errors { get; set; }
 

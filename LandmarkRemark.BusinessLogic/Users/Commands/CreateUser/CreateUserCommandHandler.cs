@@ -28,9 +28,9 @@ namespace LandmarkRemark.BusinessLogic.Users.Commands.CreateUser
             
             var user = new User
             {
-                FirstName = request.FirstName,
-                LastName = request.LastName,
-                UserName = request.Username,
+                FirstName = request.FirstName.Trim(), //depending on how often we need to do this, we can also write a custom convertor that can trim string but need to think more about what content type we are going to support
+                LastName = request.LastName.Trim(),
+                UserName = request.Username.Trim(),
                 CreatedOn = _timeProvider.Now()
             };
 

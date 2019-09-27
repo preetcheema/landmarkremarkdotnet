@@ -1,4 +1,4 @@
-namespace LandmarkRemark.Api.Infrastructure
+namespace LandmarkRemark.Api.ConfigurationSettings
 {
     public class AuthenticationSettings
     {

@@ -3,7 +3,7 @@ using System.IdentityModel.Tokens.Jwt;
 using System.Security.Claims;
 using System.Text;
 using System.Threading.Tasks;
-using LandmarkRemark.Api.Infrastructure;
+using LandmarkRemark.Api.ConfigurationSettings;
 using LandmarkRemark.BusinessLogic.Users.Commands.AuthenticateUser;
 using LandmarkRemark.BusinessLogic.Users.Commands.CreateUser;
 using MediatR;
@@ -31,15 +31,14 @@ namespace LandmarkRemark.Api.Controllers
         [HttpPost("register")]
         public async Task<IActionResult> Register([FromBody] CreateUserCommand user)
         {
-            try
-            {
-                await _mediator.Send(new CreateUserCommand {FirstName = user.FirstName, LastName = user.LastName, Password = user.Password, Username = user.Username});
-                return Ok();
-            }
-            catch (Exception ex)
+            //todo: add null model filter
+            if (user == null)
             {
                 return BadRequest();
             }
+
+            await _mediator.Send(new CreateUserCommand {FirstName = user.FirstName, LastName = user.LastName, Password = user.Password, Username = user.Username});
+            return Ok();
         }
 
         [AllowAnonymous]

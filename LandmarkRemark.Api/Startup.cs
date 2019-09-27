@@ -4,7 +4,9 @@ using System.Linq;
 using System.Reflection;
 using System.Text;
 using System.Threading.Tasks;
-using LandmarkRemark.Api.Infrastructure;
+using LandmarkRemark.Api.ConfigurationSettings;
+using LandmarkRemark.Api.Infrastructure.Middleware;
+using LandmarkRemark.BusinessLogic.Exceptions;
 using LandmarkRemark.BusinessLogic.Users.Queries;
 using LandmarkRemark.Common;
 using LandmarkRemark.Infrastructure;
@@ -40,7 +42,9 @@ namespace LandmarkRemark.Api
         {
             services.AddMvc().SetCompatibilityVersion(CompatibilityVersion.Version_2_2);
 
-            services.AddDbContext<LandmarkRemarkContext>(m => m.UseSqlServer(Configuration.GetConnectionString("LandmarkRemarkDatabase"),x=>x.UseNetTopologySuite()));
+            services.AddDbContext<LandmarkRemarkContext>(m => m
+                .UseSqlServer(Configuration.GetConnectionString("LandmarkRemarkDatabase"),
+                    x => x.UseNetTopologySuite()));
 
             AddMediatR(services);
 
@@ -52,7 +56,6 @@ namespace LandmarkRemark.Api
             ConfigureAuthentication(services, appSettingsSection);
 
             services.AddSingleton<ITimeProvider, TimeProvider>();
-            
         }
 
         private static void ConfigureAuthentication(IServiceCollection services, IConfigurationSection appSettingsSection)
@@ -72,10 +75,12 @@ namespace LandmarkRemark.Api
                         {
                             var mediator = context.HttpContext.RequestServices.GetRequiredService<IMediator>();
                             var userId = int.Parse(context.Principal.Identity.Name);
-                            var user = await mediator.Send(new GetUserByIdQuery() {Id = userId});
-                            if (user == null)
+                            try
                             {
-                                // return unauthorized if user no longer exists
+                                var user = await mediator.Send(new GetUserByIdQuery() {Id = userId});
+                            }
+                            catch (EntityNotFoundException ex)
+                            {
                                 context.Fail("Unauthorized");
                             }
                         }
@@ -118,9 +123,11 @@ namespace LandmarkRemark.Api
             if (env.IsDevelopment())
             {
                 app.UseDeveloperExceptionPage();
+                app.UseApiExceptionMiddleware();
             }
             else
             {
+                app.UseApiExceptionMiddleware();
                 // The default HSTS value is 30 days. You may want to change this for production scenarios, see https://aka.ms/aspnetcore-hsts.
                 app.UseHsts();
             }
