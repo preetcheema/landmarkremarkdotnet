@@ -55,11 +55,13 @@ namespace LandmarkRemark.BusinessLogic.Notes.Queries
         {
             if (!string.IsNullOrEmpty(request.SearchTerm))
             {
+                request.SearchTerm = request.SearchTerm.Trim(); //This could be done in a filter where we can sanitize the user input
                 notes = notes.Where(m => m.Text.Contains(request.SearchTerm));
             }
 
             if (!string.IsNullOrEmpty(request.UserName))
             {
+                request.UserName = request.UserName.Trim();
                 notes = notes.Where(m => m.User.UserName == request.UserName);
             }
 

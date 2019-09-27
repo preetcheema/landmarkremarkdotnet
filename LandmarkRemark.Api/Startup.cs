@@ -49,6 +49,14 @@ namespace LandmarkRemark.Api
             var appSettingsSection = Configuration.GetSection("AuthenticationSettings");
             services.Configure<AuthenticationSettings>(appSettingsSection);
 
+            ConfigureAuthentication(services, appSettingsSection);
+
+            services.AddSingleton<ITimeProvider, TimeProvider>();
+            
+        }
+
+        private static void ConfigureAuthentication(IServiceCollection services, IConfigurationSection appSettingsSection)
+        {
             var appSettings = appSettingsSection.Get<AuthenticationSettings>();
             var key = Encoding.ASCII.GetBytes(appSettings.Secret);
             services.AddAuthentication(x =>
@@ -82,9 +90,6 @@ namespace LandmarkRemark.Api
                         ValidateAudience = false
                     };
                 });
-
-            services.AddSingleton<ITimeProvider, TimeProvider>();
-            
         }
 
         private static void AddMediatR(IServiceCollection services)
