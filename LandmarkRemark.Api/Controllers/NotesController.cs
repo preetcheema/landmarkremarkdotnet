@@ -20,34 +20,26 @@ namespace LandmarkRemark.Api.Controllers
         {
             _mediator = mediator;
         }
+
         [HttpGet]
         public async Task<ActionResult<IEnumerable<UserNoteDetailModel>>> Get(string username, string searchTerm)
         {
-            var result = await _mediator.Send(new GetNotesRequest{UserName = username,SearchTerm = searchTerm});
+            var result = await _mediator.Send(new GetNotesRequest {UserName = username, SearchTerm = searchTerm});
 
             return Ok(result);
         }
 
         [HttpPost]
-        public async Task<IActionResult> Post([FromBody]CreateNoteViewModel model)
+        public async Task<IActionResult> Post([FromBody] CreateNoteViewModel model)
         {
             //This could be added into global filter if null model validation is being checked at multiple places
             if (model == null)
             {
                 return BadRequest();
             }
-
-            try
-            {
-                var userId = int.Parse(User.Identity.Name);
-                var result = await _mediator.Send(new CreateNoteCommand {UserId = userId, Text = model.Text, Latitude = model.Latitude, Longitude = model.Longitude});
-                return Ok(result);
-            }
-            catch (UnProcessableEntityException ex) //This could be built into a glabal exception middleware where we could return just the appropriate details of exception to client
-            {
-                return BadRequest();
-            }
+            var userId = int.Parse(User.Identity.Name);
+            var result = await _mediator.Send(new CreateNoteCommand {UserId = userId, Text = model.Text, Latitude = model.Latitude, Longitude = model.Longitude});
+            return Ok(result);
         }
-
     }
 }
