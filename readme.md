@@ -8,7 +8,7 @@ The solution allows users to:
  4.View other users notes.
  5.Filter notes by combination of username and text inside comment.
 
- * I have left out my google api key in the react project to make it easy to test. Please delete after testing.
+ * Please add google api key
 
  Limitations: 
  The api to get notes is currently very simplistic. In real world application this could be much more complicated for example, getting only
